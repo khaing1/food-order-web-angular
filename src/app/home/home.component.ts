@@ -9,9 +9,8 @@ export class HomeComponent implements OnInit {
   constructor(private router: Router) {}
 
   ngOnInit(): void {}
-  title = 'Food Delivery from the restaurants.Order now!';
+  title = 'Food Delivery from the restaurants.Order now! BLahhh are you kidding me';
   search(township: string) {
-   
     this.router.navigate([`/${township}`]);
   }
 }
