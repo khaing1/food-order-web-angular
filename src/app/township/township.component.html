@@ -1,6 +1,10 @@
 <div *ngIf="restaurants.length">
-  <div *ngFor="let restaurant of restaurants">
-    <img src="{{ restaurant.url }}" />
-    <p>{{ restaurant.name }}</p>
+  <div class="container">
+    <div id="single-item" *ngFor="let restaurant of restaurants">
+      <!-- <a> -->
+      <img src="{{ restaurant.url }} " style="width: 200px; height: 150px" />
+      <p>{{ restaurant.name }}</p>
+      <!-- </a> -->
+    </div>
   </div>
 </div>

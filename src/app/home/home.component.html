@@ -1,5 +1,10 @@
-<div>
-  <input #township placeholder="enter your township" />
-  <button (click)="search(township.value)">Search</button>
-  <img src="../assets/photo/Gong cha.jpg" />
+<div class="container">
+  <h1>{{ title }}</h1>
+  <div class="search">
+    <input #township placeholder="enter your township" />
+    <button (click)="search(township.value)">Search</button>
+
+    <img src="../assets/photo/food.png" style="margin-top: 360px" />
+  </div>
+  <!-- <div class="center"></div> -->
 </div>

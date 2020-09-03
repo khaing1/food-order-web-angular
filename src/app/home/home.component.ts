@@ -1,15 +1,17 @@
 import { Component, OnInit } from '@angular/core';
-
+import { Router } from '@angular/router';
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.css'],
 })
 export class HomeComponent implements OnInit {
-  constructor() {}
+  constructor(private router: Router) {}
 
   ngOnInit(): void {}
+  title = 'Food Delivery from the restaurants.Order now!';
   search(township: string) {
-    console.log(township);
+   
+    this.router.navigate([`/${township}`]);
   }
 }
